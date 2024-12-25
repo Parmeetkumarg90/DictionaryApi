@@ -1,0 +1,94 @@
+* {
+    margin: 0 auto;
+    font-size: 1.4vmax;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(to right, red, blue);
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+}
+
+header>div>h1 {
+    font-size: 2.3vmax;
+}
+
+header>div {
+    display: flex;
+    gap: 1vmax;
+    align-items: center;
+    margin: 0;
+}
+
+header>div>p:hover {
+    font-weight: 900;
+    color: rgb(255, 115, 0);
+}
+
+main {
+    max-height: 82%;
+    overflow-y: scroll;
+    background-color: grey;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    animation: gradient 3s infinte;
+    background-image: linear-gradient(to right, red, blue);
+}
+
+@keyframes gradient {
+    0% {
+        background-image: linear-gradient(to right, red, blue);
+    }
+
+    50% {
+        background-image: linear-gradient(to left, red, blue);
+    }
+
+    100% {
+        background-image: linear-gradient(to right, red, blue);
+    }
+}
+
+footer>div {
+    margin: 0;
+    margin-top: 1vmax;
+}
+
+footer>div>img {
+    width: 5vmax;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+footer>div>#text {
+    /* width: 88vw; */
+    height: 3vmax;
+    margin-top: 1vmax;
+}
+
+#file-input {
+    position: relative;
+}
+
+#file-input input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
